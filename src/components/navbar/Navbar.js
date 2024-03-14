@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import App, { UserContext } from "../../App";
 import { AppContext } from "../../context/appContext";
+
 export default function Navbar() {
   const { flag, setFlag, user, setUser } = useContext(UserContext);
   const { cartItems,orders } = useContext(AppContext);
